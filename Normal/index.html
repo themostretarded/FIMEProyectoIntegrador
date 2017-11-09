@@ -6,27 +6,43 @@
 
 <body>
 
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Cerrar &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Agregar</a>
-  <a href="#" class="w3-bar-item w3-button">Quitar</a>
-</div>
-
-<!-- Page Content -->
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container">
-    <h1>Mesas</h1>
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Cerrar &times;</button>
+    <a href="#" class="w3-bar-item w3-button" id="agregar">Agregar</a>
+    <a href="#" class="w3-bar-item w3-button">Quitar</a>
   </div>
-</div>
-<div class="w3-container" id="contenido">
-<div>Super dupér contenido</div>
-</div>
-<div class="w3-container" id="contenido">
-  <div>contenido</div>
-  <div>contenido</div>
-</div>
-<script src="./js/script.js"></script>
+
+  <!-- Page Content -->
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container">
+      <h1>Mesas</h1>
+    </div>
+  </div>
+
+  <div class="w3-container" id="contenido">
+    <div>Super dupér contenido</div>
+    <div class="w3-card">
+        <p>w3-card</p>
+      </div>
+      <div class="w3-card">
+          <p>w3-card</p>
+        </div>
+        <div class="w3-card">
+            <p>w3-card</p>
+          </div>
+          <div class="w3-card">
+              <p>w3-card</p>
+            </div>
+  </div>
+
+  <div class="w3-container">
+    <div>contenido</div>
+  </div>
+
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/generador.js"></script>
 </body>
-</html> 
+
+</html>
