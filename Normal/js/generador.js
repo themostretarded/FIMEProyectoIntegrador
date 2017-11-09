@@ -1,6 +1,6 @@
 $(()=>{
     $("#agregar").click(() => {
-        $("#contenido").append("vamanas")
+        $("#contenido").append("<div class=\"w3-card\"><p>w3-card</p></div>")
       });
 })
 /*Funciones para la barra normal*/
