@@ -10,7 +10,7 @@ $(() => {
             filas = filas + 1;
         }
 
-        $("#" + "contenido" + r).append("<div class=\"w3-col m3 l2\"><div class=\"w3-card w3-center\" id="+veces+"><p><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div>Estado</div></p></div></div>");
+        $("#" + "contenido" + r).append("<div class=\"w3-col m3 l2\"><div class=\"w3-card w3-center w3-pale-green\" id="+veces+"><p><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div>Estado</div></p></div></div>");
         conteo = conteo + 1;
         if (conteo == 6) {
             conteo = 0;
