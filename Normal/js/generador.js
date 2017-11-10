@@ -9,8 +9,8 @@ $(() => {
             $("#contenedor").append("<div class=\"w3-row\" id=\"contenido" + filas + "\"></div>");
             filas = filas + 1;
         }
-        
-        $("#"+"contenido" + r).append("<div class=\"w3-col m3 l2\"><div class=\"w3-card\"><p>w3-card</p></div></div>");
+
+        $("#" + "contenido" + r).append("<div class=\"w3-col m3 l2\"><div class=\"w3-card w3-center\" id="+veces+"><p><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div>Estado</div></p></div></div>");
         conteo = conteo + 1;
         if (conteo == 6) {
             conteo = 0;
@@ -28,3 +28,6 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
+/*
+$().append("<div class=\"w3-card-4 w3-dark-grey\" id="+veces+"><div class=\"w3-container\"><div class=\"w3-container w3-center\"><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div>Estado</div><div>card</div></div></div></div>")
+*/
