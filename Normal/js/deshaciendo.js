@@ -1,11 +1,9 @@
 $(() => {
 
-    $("#quitar").click(() => {
-        elimar = document.getElementById('numero').value;
+    $(".enviarid").click(() => {        
+        var elimar = $("#numero").val();
         console.log(elimar);
         selimar = elimar.toString();
-        console.log(selimar)
-    
         $("#" + "contenido" + selimar).remove();
     });
 })
