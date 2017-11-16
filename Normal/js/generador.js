@@ -1,7 +1,9 @@
 var conteo = 0;
 var veces = 0;
 var filas = 0;
+var arr_mesas = [];
 var r = "0";
+
 $(() => {
     $("#agregar").click(() => {
 
@@ -17,7 +19,20 @@ $(() => {
             r = filas.toString()
         }
         veces = veces + 1;
-        
+        var obj_mesa = { id: veces, isOcupado: false };
+        arr_mesas.push(obj_mesa);
+        console.log('json_mesas:');
+        console.log(arr_mesas);
+    });
+
+    $(".enviarid").click(() => {
+        var elimar = $("#numero").val();
+        console.log(elimar);
+        arr_mesas.splice(elimar - 1, 1);
+        console.log("voy a eliminar el elemento con el id : "+ elimar);
+        console.log(arr_mesas);
+        selimar = elimar.toString();
+        $("#" + selimar).parent().remove();
     });
     
 })
