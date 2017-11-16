@@ -1,9 +1,8 @@
 $(() => {
-
-    $(".enviarid").click(() => {        
+    $(".enviarid").click(() => {
         var elimar = $("#numero").val();
         console.log(elimar);
         selimar = elimar.toString();
-        $("#" + selimar).remove();
+        $("#" + selimar).parent().remove();
     });
 })

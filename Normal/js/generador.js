@@ -10,16 +10,14 @@ $(() => {
             filas = filas + 1;
         }
 
-        $("#" + "contenido" + r).append("<div class=\"w3-col m3 l2\"><div class=\"w3-card w3-center w3-pale-green w3-animate-zoom\" id=" + veces + "><p><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div>Estado</div></p></div></div>");
+        $("#" + "contenido" + r).append("<div class=\"w3-col m3 l2\"><div class=\"w3-card w3-center w3-pale-green w3-animate-zoom w3-tooltip\" id=" + veces + "><p><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div><span>Estado</span><span class=\"w3-text w3-tag w3-animate-opacity\">De click para cambiar el estado<span></div></p><p>Numero:" + veces + "</p></div></div>");
         conteo = conteo + 1;
         if (conteo == 6) {
             conteo = 0;
             r = filas.toString()
         }
         veces = veces + 1;
-        /*
-        console.log("conteo:" + conteo + "\n veces:" + veces);
-        console.log("#contenido" + r);*/
+        
     });
     
 })
@@ -30,6 +28,3 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
-/*
-$().append("<div class=\"w3-card-4 w3-dark-grey\" id="+veces+"><div class=\"w3-container\"><div class=\"w3-container w3-center\"><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div>Estado</div><div>card</div></div></div></div>")
-*/

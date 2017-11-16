@@ -1,9 +1,11 @@
 {
     "mesas": [
         {
+            "id": "1",
             "ocupada": "true"
         },
         {
+            "id": "2",
             "ocupada": "true"
         }
     ]
