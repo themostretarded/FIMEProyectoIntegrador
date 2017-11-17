@@ -23,17 +23,24 @@ $(() => {
         arr_mesas.push(obj_mesa);
         console.log('json_mesas:');
         console.log(arr_mesas);
+
+        for(var indice in arr_mesas){
+            var id = arr_mesas[indice].id;
+            console.log(id);
+        }
+
     });
 
     $(".enviarid").click(() => {
         var elimar = $("#numero").val();
         console.log(elimar);
-        arr_mesas.splice( - 1, 1);
+        arr_mesas.splice(elimar - 1, 1);
         console.log("voy a eliminar el elemento con el id : "+ elimar);
         console.log(arr_mesas);
         selimar = elimar.toString();
         $("#" + selimar).parent().remove();
     });
+
     
 })
 /*Funciones para la barra normal*/
