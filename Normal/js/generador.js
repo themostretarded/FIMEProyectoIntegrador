@@ -4,7 +4,7 @@ var filas = 0;
 var arr_mesas = [];
 var r = "0";
 
-$(() => {
+//$(() => {
     //agrega las mesas y las separa por filas
     $("#agregar").click(() => {
 
@@ -16,7 +16,7 @@ $(() => {
             $("#guardando").append("<button id=\"btnguardar\" class=\"w3-btn w3-block w3-teal w3-animate-opacity\">Guardar</button>");
         }
 
-        $("#" + "contenido" + r).append("<div class=\"w3-col m3 l2\"><div class=\"w3-card w3-center w3-pale-green w3-animate-zoom w3-tooltip\" id=" + veces + "><p><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div><span>Estado</span><span class=\"w3-text w3-tag w3-animate-opacity\">De click para cambiar el estado<span></div></p><p>Numero:" + veces + "</p></div></div>");
+        $("#contenido" + r).append("<div id=\" "+ veces +" \" class=\"mesaSelected w3-col m3 l2\" ><div class=\"w3-card w3-center w3-pale-green w3-animate-zoom w3-tooltip\" id=" + veces + "><p><img src=\"./media/icono/table.png\" alt=\"MesaQueMasApluada\" class=\"mesas\"><div><span>Estado</span><span class=\"w3-text w3-tag w3-animate-opacity\">De click para cambiar el estado<span></div></p><p>Numero:" + veces + "</p></div></div>");
         conteo = conteo + 1;
         if (conteo == 6) {
             conteo = 0;
@@ -28,10 +28,11 @@ $(() => {
         arr_mesas.push(obj_mesa);
         console.log('json_mesas:');
         console.log(arr_mesas);
-        
-        $( "div.w3-card" ).on( "click", function() {
-            $(this).toggleClass("w3-pale-green w3-pale-red");
-          });
+    });
+
+    $( "#contenedor" ).on('click', 'div.mesaSelected>div.w3-card', function() {
+        console.log(this.id)
+        $(this).toggleClass("w3-pale-green w3-pale-red");
     });
 
     //quita mesas por medio de su id
@@ -66,7 +67,7 @@ $(() => {
     
       
 
-});
+//});
 
 /*Funciones para la barra normal*/
 function w3_open() {
