@@ -5,53 +5,76 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection" />
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+
   <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">
-        <i class="material-icons">cloud</i>Logo</a>
+        <i class="material-icons">restaurant</i>RestOrg
+      </a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="sass.html">
-            <i class="material-icons">add</i>
+          <a >
+            <i class="material-icons" id="agregar">add</i>
           </a>
         </li>
         <li>
-          <a href="sass.html">
-            <i class="material-icons">search</i>
+          <a href="#modal1">
+            <i class="material-icons" id="quitar" >remove</i>
           </a>
         </li>
       </ul>
     </div>
   </nav>
+
   <div class="container" id="contenedor">
     <!-- Page Content goes here -->
+
     <div class="row">
       <div class="col s12 m6 l3">
         <div class="card-panel teal">
-          <div><img src="./media/icono.jpeg"></div>
-          <span class="white-text">
-          </span>
+          <div class="card-image">
+            <img src="./media/icono/table.png">
+          </div>
+          <div class="card-content white-text">
+            <p>Estado: </p>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
   <div class="container" id="guardando">
     <!-- Page Content goes here -->
   </div>
+  <!--modal-->
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div>
+        <input id="numero" type="text">
+      </div>
+      <div>
+        <input class="w3-button w3-orange w3-hover-red enviarid" type="button" value="Borrando">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="./js/jquery-3.2.1.min.js"></script>
-  <script src="./js/generador.js"></script>
+  <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./js/generador.js"></script>
 </body>
 
 </html>
